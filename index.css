@@ -3,4 +3,13 @@ body{
 }
 
 h1 {
+    color: aqua;
+}
+
+.clicked{
+    color: rgb(52, 73, 94)
+}
+
+.btn{
+    cursor: pointer;
 }

@@ -67,17 +67,6 @@ if(age> 19 && age <= 22){
 } else{
     console.log("술마시면 불법");
 }
-*/
-//const title = document.getElementById("title");
-const title = document.querySelector("#title");
-const BASE_COLOR = "rgb(52, 73, 94)";
-const OTHER_COLOR = "#74b9ff";
-
-console.log(title);
-title.innerHTML = "Hi! Frome Js";
-title.style.color = 'red';
-document.title = '바꿀수있다';
-console.dir(title);
 
 function handleClick(){
     const currenrColor = title.style.color;
@@ -88,8 +77,26 @@ function handleClick(){
     }
 }
 
+*/
+//const title = document.getElementById("title");
+const title = document.querySelector("#title");
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#74b9ff";
+const CLICKED_CLASS = "cliked";
+
+function handleClick(){
+    /*
+    const currenrClass = title.className;
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    if(hasClass){
+        title.classList.remove(CLICKED_CLASS);
+    } else{
+        title.classList.add(CLICKED_CLASS);
+    }
+    */
+    title.classList.toggle(CLICKED_CLASS);
+
 function init(){
-    title.style.color = BASE_COLOR;
     title.addEventListener("click", handleClick);
 }
 
