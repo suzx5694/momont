@@ -80,8 +80,6 @@ function handleClick(){
 */
 //const title = document.getElementById("title");
 const title = document.querySelector("#title");
-const BASE_COLOR = "rgb(52, 73, 94)";
-const OTHER_COLOR = "#74b9ff";
 const CLICKED_CLASS = "cliked";
 
 function handleClick(){
